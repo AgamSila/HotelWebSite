@@ -1,0 +1,58 @@
+/* #region typography  */
+/***********************************
+* Typography
+***********************************/
+h2 {
+  text-align: center;
+  margin-top: 2rem;
+}
+h3 {
+  grid-column: 1/-1;
+  text-align: center;
+}
+/* #ending region typography */
+/* #region  Layout  */
+/***********************************
+* Layout 
+***********************************/
+section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 2rem;
+  gap: 10px;
+}
+/* #end region layout  */
+/* #region images */
+/***********************************
+* Images
+***********************************/
+figure {
+  margin: 0 auto;
+  position: relative;
+  height: min-content;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+figcaption {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px red;
+  background-color: rgb(255, 255, 255);
+  opacity: 0;
+  transition: 0.5s;
+}
+figcaption:focus,
+figcaption:hover {
+  opacity: 0.5;
+}
+/*ending images */

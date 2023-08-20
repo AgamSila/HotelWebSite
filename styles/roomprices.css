@@ -1,0 +1,31 @@
+/* #region general */
+/***********************************
+*Styling and typography
+***********************************/
+main {
+  background-color: lightgray;
+}
+/* #end  region typography */
+
+/* #region table */
+/***********************************
+*Table
+***********************************/
+table {
+  width: 100%;
+  min-height: 70vh;
+  border: 1px solid black;
+}
+caption {
+  font-size: 2rem;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+td {
+  text-align: center;
+  border: 1px solid black;
+}
+th {
+  border: 1px solid black;
+}
+/* #end  region table */

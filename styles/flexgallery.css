@@ -1,0 +1,66 @@
+/* #region typography */
+/***********************************
+* Typography
+***********************************/
+h2 {
+  text-align: center;
+  margin-top: 2rem;
+}
+/* #ending region typography */
+/* #region  Layout  */
+/***********************************
+* Layout 
+***********************************/
+.section {
+  width: 100%;
+  /* center horizontally */
+  margin: 30px auto;
+  border: 5px solid #cbcaca;
+  /* flexible layout */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.col {
+  flex-basis: 50%;
+  padding: 5px;
+  margin: 0;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+/* #end region layout  */
+/* #region images */
+/***********************************
+* Images
+***********************************/
+figure {
+  margin: 1rem auto;
+  position: relative;
+}
+figcaption {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px red;
+  background-color: rgb(255, 255, 255);
+  opacity: 0;
+  transition: 0.5s;
+}
+figcaption:focus,
+figcaption:hover {
+  opacity: 0.5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/*ending images */

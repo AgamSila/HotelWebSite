@@ -1,0 +1,127 @@
+/* #region general */
+/***********************************
+* Global styling and typography
+***********************************/
+:root {
+  font-size: 62.5%;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  font-size: 1.4rem;
+
+  --color1: rgba(0, 204, 255, 0.979);
+  --color2: white;
+  --color3: black;
+  --color4: rgb(193, 176, 82);
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex-grow: 1;
+}
+/* #end region general */
+/* #region typography */
+/***********************************
+* typography
+***********************************/
+h1,
+h2 {
+  font-family: monospace;
+  font-weight: 700;
+}
+h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+h2 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+.container {
+  max-width: 90rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* #end  region typography */
+
+/***********************************
+* header
+***********************************/
+header {
+  text-align: center;
+  padding: 2rem 0;
+  color: aliceblue;
+  background-color: rgb(35, 37, 48);
+}
+/* #end region header */
+
+/* #region nav */
+/***********************************
+* navigation
+***********************************/
+nav {
+  color: aliceblue;
+  background-color: rgb(35, 37, 48);
+  z-index: 500;
+}
+
+nav a {
+  display: block;
+  text-align: center;
+  cursor: pointer;
+}
+.btn {
+  display: grid;
+  background-color: var(--color4);
+  align-content: center;
+  margin-bottom: 1rem;
+}
+.btn focus,
+.btn:hover {
+  opacity: 0.8;
+}
+a:visited{
+  color:white;
+}
+/* #end region nav */
+
+/* #region Footer */
+/***********************************
+* Footer
+***********************************/
+footer {
+  text-align: center;
+  color: aliceblue;
+  background-color: rgb(35, 37, 48);
+  padding: 3rem;
+}
+/* #end region footer*/
+
+/* #region bigger screen*/
+/***********************************
+* Bigger screen
+***********************************/
+@media (min-width: 600px) {
+  nav {
+    display: grid;
+    grid-template-columns: repeat(6, 0.1fr);
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    gap: 1rem;
+  }
+  nav :last-child {
+    grid-column: 6/-1;
+  }
+}
+/* #endregion bigger screen*/

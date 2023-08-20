@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "../../../js/תרגילים של JS/try"
+	},
+	{
+		"path": "../../../js/תרגילים של JS/event delegetion2-פתרון של טניהtodo-list"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "try"
+  }
+}

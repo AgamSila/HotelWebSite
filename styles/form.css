@@ -1,0 +1,96 @@
+/* #region Main */
+
+/***************************************
+ * Main,small screens
+ ***************************************/
+input {
+  background-color: whitesmoke;
+}
+.gender input {
+  margin: 1rem;
+}
+.room input {
+  margin: 1rem;
+}
+.pets input {
+  margin: 1rem;
+}
+label {
+  display: block;
+}
+textarea {
+  display: block;
+  width: 100%;
+}
+
+.freeinput input {
+  width: 100%;
+}
+
+/* #endregion Main */
+
+/* #region bigger screen*/
+/***********************************
+* Bigger screen,typography
+***********************************/
+@media (min-width: 450px) {
+  div {
+    font-style: italic;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+  }
+  .form {
+    border-bottom: 0.1rem solid gray;
+  }
+  .text {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 1em;
+  }
+  .text input {
+    border: none;
+    border-bottom: 1px solid grey;
+  }
+  .f-box {
+    grid-column: 1 / -1;
+    padding: 2rem;
+  }
+
+  .gender {
+    margin-bottom: 3rem;
+  }
+  .gender input {
+    margin-left: 8rem;
+  }
+  .room input {
+    margin-left: 4.8rem;
+    margin-bottom: 3rem;
+  }
+  .pets input {
+    margin-left: 9.5rem;
+  }
+
+  .Commens {
+    grid-column: 1 / -1;
+  }
+  textarea {
+    grid-column: 1 / -1;
+  }
+  button {
+    grid-column: 1 / -1;
+    border: none;
+    border-bottom: 1px solid grey;
+    padding: 1rem;
+  }
+  .term {
+    grid-column: span 2;
+  }
+  label {
+    display: inline;
+  }
+  .freeinput {
+    grid-column: span 2;
+  }
+}
+/* #endregion Bigger screen */
